@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>it-image-editor - Basic</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../../../../dist/it-image-editor.js"></script>
+    <style>
+        body {
+            padding: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+  function addImageEditor() {
+    const editor = document.createElement('it-image-editor');
+    editor.addEventListener('save', (e) => {
+      console.log('save image', e.detail);
+    });
+    document.body.appendChild(editor);
+  }
+
+  if (document.readyState === "interactive") {
+    addImageEditor();
+  } else {
+    document.addEventListener('DOMContentLoaded', () => addImageEditor());
+  }
+</script>
+</body>
+</html>
