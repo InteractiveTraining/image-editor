@@ -1,6 +1,6 @@
 {
   "name": "@interactivetraining/image-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Interactive.Training Component: image-editor",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -13,7 +13,8 @@
   "scripts": {
     "build": "stencil build --es5 --docs",
     "start": "stencil build --dev --watch --serve",
-    "test": "stencil test --spec --e2e"
+    "test": "stencil test --spec --e2e",
+    "publish.npmjs": "npm publish --@interactivetraining:registry=https://registry.npmjs.org/ --access public"
   },
   "dependencies": {
     "@ionic/core": "^4.6.0",
