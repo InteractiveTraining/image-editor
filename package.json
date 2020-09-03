@@ -27,7 +27,7 @@
     "@stencil/utils": "^0.0.5",
     "@types/jest": "23.3.14",
     "@types/puppeteer": "1.12.3",
-    "puppeteer": "1.11.0"
+    "puppeteer": "5.2.1"
   },
   "author": "Interactive Training",
   "maintainers": [
